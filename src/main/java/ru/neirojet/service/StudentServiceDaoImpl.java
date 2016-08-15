@@ -79,7 +79,7 @@ public class StudentServiceDaoImpl implements StudentService {
     }
 
     @Autowired
-    @Qualifier("studentFactoryFileImpl")
+    @Qualifier("studentFactoryRestImpl")
     @Override
     public void setStudentFactory(StudentFactory factory) {
         this.factory = factory;
