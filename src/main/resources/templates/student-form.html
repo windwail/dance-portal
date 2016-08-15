@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head xmlns:th="http://www.thymeleaf.org">
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link href="/css/danceportal.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link href="/css/simple-sidebar.css" rel="stylesheet"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    Dance manager
+                </a>
+            </li>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/students">Students</a>
+            </li>
+            <li>
+                <a href="/student-new">New student</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <form class="form-horizontal" th:object="${student}" th:action="@{/student}" method="post">
+
+                        <input type="hidden"  th:field="*{photoUrl}"/>
+                        <input type="hidden"  th:field="*{id}"/>
+                        <div class="form-group">
+                            <label class="col-sm-2 sm-2 control-label"></label>
+                            <div class="col-sm-10">
+                                <div class="imgBoxBig">
+                                    <img th:src="${student.photoUrl}" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">First name:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" th:field="*{firstName}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Last name:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" th:field="*{lastName}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Gender:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" th:field="*{gender}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Cell:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" th:field="*{cell}"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Email:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" th:field="*{email}"/>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <button type="submit" class="btn btn-default" onclick="">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+
+</script>
+
+</body>
+
+</html>

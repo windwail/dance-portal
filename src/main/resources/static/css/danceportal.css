@@ -1,0 +1,4 @@
+
+.imgBox, .imgBox img { width:100px; height:100px; margin:0;padding:0; border-radius: 40px 20px 40px 20px ; }
+
+.imgBoxBig, .imgBoxBig img { width:250px; height:250px; margin:0;padding:0; border-radius: 15px 15px 15px 15px ; }

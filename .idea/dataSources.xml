@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2074923497">
+    <data-source source="LOCAL" name="H2 - mem:default" uuid="fff33218-14a0-4cc6-ac05-2577e4aa9b23">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:mem:default</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="PostgreSQL - danceportal@localhost" uuid="830aa20e-20fa-4ae7-ae96-4286216ec259">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/danceportal</jdbc-url>
+    </data-source>
+  </component>
+</project>

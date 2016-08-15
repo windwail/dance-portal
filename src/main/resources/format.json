@@ -1,0 +1,49 @@
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "mr",
+        "first": "barış",
+        "last": "erbay"
+      },
+      "location": {
+        "street": "8443 necatibey cd",
+        "city": "denizli",
+        "state": "niğde",
+        "postcode": 14133
+      },
+      "email": "barış.erbay@example.com",
+      "login": {
+        "username": "lazyfish754",
+        "password": "test2",
+        "salt": "nzY60rEz",
+        "md5": "09aa5f0377a303c0f8baa761344478aa",
+        "sha1": "565c042aa515565715871cad17fa9af55274baac",
+        "sha256": "7a0810b18a11fbbee3beacf489d1e1ef38181ef24fc832b163d7cf3774fb9042"
+      },
+      "registered": 1110068790,
+      "dob": 835543291,
+      "phone": "(735)-637-3336",
+      "cell": "(249)-569-4271",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/68.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/68.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/68.jpg"
+      },
+      "nat": "TR"
+    }
+  ],
+  "info": {
+    "seed": "19d206c460b373c8",
+    "results": 1,
+    "page": 1,
+    "version": "1.0"
+  }
+}
+
+
